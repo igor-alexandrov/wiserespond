@@ -64,7 +64,8 @@ Gem::Specification.new do |s|
     "test/dummy/public/favicon.ico",
     "test/dummy/script/rails",
     "test/helper.rb",
-    "test/test_controller.rb"
+    "test/test_controller.rb",
+    "wiserespond.gemspec"
   ]
   s.homepage = "http://github.com/igor-alexandrov/wiserespond"
   s.licenses = ["MIT"]
