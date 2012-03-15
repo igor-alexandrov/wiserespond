@@ -1,5 +1,10 @@
 require 'rubygems'
 require 'bundler'
+
+ENV['RAILS_ENV'] = 'test'
+require "dummy/config/environment"
+require "rails/test_help"
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e

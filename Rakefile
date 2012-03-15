@@ -17,11 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "wiserespond"
   gem.homepage = "http://github.com/igor-alexandrov/wiserespond"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Rails 3 responders to make you controllers DRY}
+  gem.description = %Q{With wiserespond you can easily setup your controllers to respond to :html and :js content types.}
   gem.email = "igor.alexandrov@gmail.com"
   gem.authors = ["Igor Alexandrov"]
-  # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -32,17 +31,9 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
-
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
