@@ -12,7 +12,7 @@ module Wiserespond
       
       respond_to do |format|
         format.html { redirect_to options[:url] }
-        format.js { render :template => 'shared/wiserespond/redirect', :locals => options }        
+        format.js { render :template => 'wiserespond/redirect', :locals => options }        
       end
     end
 
@@ -27,7 +27,7 @@ module Wiserespond
       
       respond_to do |format|
         format.html { render options[:action] }
-        format.js { render :template => 'shared/wiserespond/content', :locals => options }
+        format.js { render :template => 'wiserespond/content', :locals => options }
       end
     end
     
