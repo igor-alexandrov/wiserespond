@@ -1,0 +1,3 @@
+<% if local_assigns[:id].present? && local_assigns[:partial].present? %>
+  $('#<%= id %>').replaceWith('<%= escape_javascript(render :partial => "#{partial}", :locals => locals) %>')
+<% end %>
