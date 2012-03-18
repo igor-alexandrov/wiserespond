@@ -1,8 +1,19 @@
-[![Build Status](https://secure.travis-ci.org/igor-alexandrov/paperclip-aws.png)](http://travis-ci.org/igor-alexandrov/paperclip-aws)
+[![Build Status](https://secure.travis-ci.org/igor-alexandrov/wiserespond.png)](http://travis-ci.org/igor-alexandrov/wiserespond)
 
 # wiserespond
 
 Rails 3 responders to make you controllers DRY.
+
+## Installation
+
+Add this to your Gemfile:
+
+    gem 'wiserespond'
+
+then do:
+    
+    bundle
+  
 
 ## How does it work?
 
@@ -127,7 +138,7 @@ Make your controllers as DRY as you can!
 * [www.sdelki.ru](http://www.sdelki.ru)
 * [www.lienlog.com](http://www.lienlog.com)
 
-Know other projects? Just contact me and I will add them here.
+Know other projects? Then contact me and I will add them to the list.
 
 ## Contributing to wiserespond
  
@@ -143,4 +154,3 @@ Know other projects? Just contact me and I will add them here.
 
 Copyright (c) 2012 Igor Alexandrov. See LICENSE.txt for
 further details.
-
