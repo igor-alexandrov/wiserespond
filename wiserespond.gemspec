@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "wiserespond"
-  s.version = "0.2.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Igor Alexandrov"]
-  s.date = "2012-03-17"
+  s.date = "2012-03-18"
   s.description = "With wiserespond you can easily setup your controllers to respond to :html and :js content types."
   s.email = "igor.alexandrov@gmail.com"
   s.extra_rdoc_files = [
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     "lib/wiserespond/rails.rb",
     "lib/wiserespond/rails/engine.rb",
     "lib/wiserespond/rails/railtie.rb",
+    "test/application_controller_test.rb",
     "test/dummy/README.rdoc",
     "test/dummy/Rakefile",
     "test/dummy/app/assets/javascripts/application.js",
@@ -64,7 +65,6 @@ Gem::Specification.new do |s|
     "test/dummy/public/favicon.ico",
     "test/dummy/script/rails",
     "test/helper.rb",
-    "test/test_controller.rb",
     "wiserespond.gemspec"
   ]
   s.homepage = "http://github.com/igor-alexandrov/wiserespond"
