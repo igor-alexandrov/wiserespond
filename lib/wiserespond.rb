@@ -8,7 +8,7 @@ module Wiserespond
         :status => :success
       )
       
-      self.wiserespond_setup_flash(options)
+      self.setup_flash_for_redirect(options)
       
       respond_to do |format|
         format.html { redirect_to options[:url] }
@@ -23,7 +23,7 @@ module Wiserespond
         :locals => nil
       )
       
-      self.wiserespond_setup_flash(options)
+      self.setup_flash_for_content(options)
       
       respond_to do |format|
         format.html { render options[:action] }
@@ -31,16 +31,16 @@ module Wiserespond
       end
     end
     
-    def wiserespond_setup_flash(options)
-      if options[:flash].present?
-        case options[:status]
-        when :success
-          flash[:notice] = options[:flash] 
-        else  
-          flash[:warning] = options[:flash] 
-        end
-      end      
+    def setup_flash_for_redirect(options)
+      message = options.delete(:flash)
+      flash[options[:status]] = message if message.present?
     end
-    protected :wiserespond_setup_flash    
+    protected :setup_flash_for_redirect   
+    
+    def setup_flash_for_content(options) 
+      message = options.delete(:flash)
+      options[:flash] = { options[:status] => message } if message.present?
+    end
+    protected :setup_flash_for_content   
   end
 end
