@@ -140,17 +140,28 @@ Make your controllers as DRY as you can!
 
 Know other projects? Then contact me and I will add them to the list.
 
-## Contributing to wiserespond
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+## Note on Patches / Pull Requests
 
-## Copyright
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but
+   bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
 
-Copyright (c) 2012 Igor Alexandrov. See LICENSE.txt for
-further details.
+## Credits
+
+![JetRockets](http://www.jetrockets.ru/images/logo.png)
+
+Wiserespond is maintained by [JetRockets](http://www.jetrockets.ru/en).
+
+Contributors:
+
+* [Igor Alexandrov](http://igor-alexandrov.github.com/)
+* [Alexey Solilin](https://github.com/solilin)
+
+## License
+
+It is free software, and may be redistributed under the terms specified in the LICENSE file.
